@@ -1,0 +1,109 @@
+.container-fluid {
+    /* border: 2px solid red; */
+  }
+  
+  .Menucontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0 0 1.5rem 0;
+    border-bottom: 4px solid #ffc107;
+  }
+  
+  .Menubuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .menuBTN {
+    display: flex;
+    border: 1px solid black;
+    padding: 5px 16px 5px 0px;
+    border-radius: 35px;
+    position: relative;
+    overflow: hidden; /* Add this to hide overflow */
+  }
+  
+  .menuBTN a {
+    margin-left: 10px;
+    position: relative;
+    padding: 10px 20px; /* Increase padding for better click area */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: black; /* Set anchor tag color to black */
+    text-decoration: none; /* Remove underline */
+    outline: none; /* Remove outline */
+    background-color: transparent; /* Set anchor tag background to transparent */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  /* Add the following styles for the sliding background effect */
+  .menuBTN a.active::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffc107; /* Background color for active menu */
+    border-radius: 35px; /* Match the border radius of menuBTN */
+    z-index: -1; /* Send it behind the text */
+    transform: scaleX(0); /* Initially set width to 0 */
+    transform-origin: left; /* Start scaling from the left */
+    transition: transform 0.3s ease; /* Smooth slide-in transition */
+  }
+  
+  .menuBTN a.active {
+    background-color: #ffc107; /* Background color for active menu */
+    border-radius: 35px; /* Match the border radius of menuBTN */
+  }
+  
+  .menuBTN a.active:hover {
+    background-color: #ffc107; /* Background color for active menu on hover */
+  }
+  
+.menuDetail{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 5px;
+    /* padding: 10px; */
+}
+
+.Price{
+    text-align: center;
+}
+.menuBOX{
+    width: 45%;
+    height: 35%;
+    /* border: 2px solid green; */
+    /* border: 2px solid purple; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    /* padding: 4px; */
+}
+.menuImage{
+    padding: 10px;
+    width: 140px;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+.menuImage img{
+    width: 120px;
+    height: 150px;
+}

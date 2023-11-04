@@ -1,0 +1,33 @@
+.contact{
+    margin-top: 115px;
+    margin-bottom: 50px;
+}
+.contactContainer{
+    /* padding: 0px 100px; */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.form{
+    width: 90%;
+
+    /* border: 2px solid red; */
+    /* padding: 50px; */
+    /* padding: 0 100px; */
+}
+.btninMenucss{
+    margin-top: 20px;
+}
+.content h2{
+    text-align: center;
+    /* color: #ffc107; */
+    font-size: 3rem;
+    /* border-bottom: 2px solid #ffc107; */
+    margin: 0 0 1.5rem 0;
+    border-bottom: 4px solid  #ffc107;
+    display: inline-block;
+}
